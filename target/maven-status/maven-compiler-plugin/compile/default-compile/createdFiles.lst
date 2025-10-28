@@ -1,0 +1,17 @@
+com\fidelin\clicker\security\JwtFilter.class
+com\fidelin\clicker\service\RateLimitExceededException.class
+com\fidelin\clicker\controller\ScoreController.class
+com\fidelin\clicker\service\RateLimiter.class
+com\fidelin\clicker\controller\AuthController.class
+com\fidelin\clicker\dto\LoginRequest.class
+com\fidelin\clicker\dto\TokenResponse.class
+com\fidelin\clicker\controller\GlobalExceptionHandler.class
+com\fidelin\clicker\model\User.class
+com\fidelin\clicker\security\JwtUtil.class
+com\fidelin\clicker\dto\RegisterRequest.class
+com\fidelin\clicker\controller\LeaderboardController.class
+com\fidelin\clicker\FidelinClickerApplication.class
+com\fidelin\clicker\security\SecurityConfig.class
+com\fidelin\clicker\dto\ScoreResponse.class
+com\fidelin\clicker\service\UserService.class
+com\fidelin\clicker\repo\UserRepository.class

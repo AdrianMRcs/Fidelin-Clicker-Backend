@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16
+    container_name: clicker-db
+    environment:
+      POSTGRES_USER: clicker
+      POSTGRES_PASSWORD: clicker
+      POSTGRES_DB: clickerdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: clicker-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      POSTGRES_USER: clicker
+      POSTGRES_PASSWORD: clicker
+      JWT_SECRET: "please-change-in-prod"
+    depends_on:
+      - db
+volumes:
+  db_data:

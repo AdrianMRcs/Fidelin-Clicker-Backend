@@ -1,0 +1,17 @@
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\controller\AuthController.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\controller\GlobalExceptionHandler.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\controller\LeaderboardController.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\controller\ScoreController.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\dto\LoginRequest.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\dto\RegisterRequest.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\dto\ScoreResponse.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\dto\TokenResponse.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\FidelinClickerApplication.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\model\User.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\repo\UserRepository.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\security\JwtFilter.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\security\JwtUtil.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\security\SecurityConfig.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\service\RateLimiter.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\service\RateLimitExceededException.java
+C:\Users\adria\Documents\fidelin-clicker-full-with-leaderboard\src\main\java\com\fidelin\clicker\service\UserService.java

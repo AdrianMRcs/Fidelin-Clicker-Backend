@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🐹 Fidelín Clicker Test</title>
+</head>
+<body>
+  <h1>🐹 Fidelín Clicker Test</h1>
+  <input id="u" placeholder="username"/>
+  <input id="p" placeholder="password" type="password"/>
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+  <button onclick="add()">Add Click</button>
+  <button onclick="me()">My Score</button>
+  <button onclick="top50()">Top 50</button>
+  <pre id="out"></pre>
+<script>
+let token = null;
+function out(t){ document.getElementById('out').textContent = t; }
+
+async function register(){
+  const r = await fetch('/auth/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username: u.value, password: p.value})});
+  const j = await r.json(); token = j.token; localStorage.setItem('token', token); out(JSON.stringify(j,null,2));
+}
+async function login(){
+  const r = await fetch('/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username: u.value, password: p.value})});
+  const j = await r.json(); token = j.token; localStorage.setItem('token', token); out(JSON.stringify(j,null,2));
+}
+async function add(){
+  const r = await fetch('/score/add',{method:'POST',headers:{'Authorization':'Bearer '+(token||localStorage.getItem('token'))}});
+  const j = await r.json(); out(JSON.stringify(j,null,2));
+}
+async function me(){
+  const r = await fetch('/score/me',{headers:{'Authorization':'Bearer '+(token||localStorage.getItem('token'))}});
+  const j = await r.json(); out(JSON.stringify(j,null,2));
+}
+async function top50(){
+  const r = await fetch('/leaderboard/top?limit=5');
+  const j = await r.json(); out(JSON.stringify(j,null,2));
+}
+</script>
+</body>
+</html>
